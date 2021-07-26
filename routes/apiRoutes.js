@@ -1,7 +1,6 @@
 const fs = require("fs");
 const notes = require("../db/db.json");
 
-
 module.exports = (app) => {
     //API get route
     app.get("/api/notes", (req, res) => res.json(notes));
